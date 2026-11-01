@@ -1,0 +1,16 @@
+[package]
+name = "tinyhand-linux"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A Linux presentation pointer inspired by TinyHand"
+
+[dependencies]
+gtk4 = { version = "0.10", features = ["v4_14"] }
+gtk4-layer-shell = "0.7"
+glib = "0.21"
+gdk-pixbuf = "0.21"
+
+[[bin]]
+name = "tinyhand-linux"
+path = "src/main.rs"
